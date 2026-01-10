@@ -71,7 +71,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
             text += f"{i}. {name}\n"
         await q.message.reply_text(text)
 
-app = ApplicationBuilder().token("PUT_BOT_TOKEN_HERE").build()
+app = ApplicationBuilder().token("8291160805:AAFGCJLQngyFsVDJGQjkP_qnH2GOIDuDI68").build()
 
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(button))
